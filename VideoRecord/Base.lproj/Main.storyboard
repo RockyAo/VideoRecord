@@ -47,12 +47,9 @@
                             <constraint firstAttribute="trailing" secondItem="d7H-MI-iJN" secondAttribute="trailing" id="ruA-3D-fTu"/>
                             <constraint firstItem="d7H-MI-iJN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wU3-SQ-RDf"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="BZO-Od-XCh" appends="YES" id="D97-hW-DUa"/>
-                        </connections>
                     </view>
                     <connections>
-                        <outlet property="backView" destination="d7H-MI-iJN" id="T1f-32-Agm"/>
+                        <outlet property="backView" destination="8bC-Xf-vdC" id="ew3-nc-46y"/>
                         <outlet property="takeVideoButton" destination="LWi-Kg-nP1" id="Q3K-zn-iTp"/>
                     </connections>
                 </viewController>
@@ -62,11 +59,6 @@
                         <action selector="takeVideoButtonPress:" destination="BYZ-38-t0r" id="dCi-Pv-pyo"/>
                     </connections>
                 </pongPressGestureRecognizer>
-                <pinchGestureRecognizer id="BZO-Od-XCh">
-                    <connections>
-                        <action selector="zoomControll:" destination="BYZ-38-t0r" id="ZsW-U4-PLx"/>
-                    </connections>
-                </pinchGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="466" y="439"/>
         </scene>

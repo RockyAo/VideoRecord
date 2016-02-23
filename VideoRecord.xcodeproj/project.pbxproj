@@ -15,6 +15,10 @@
 		D84F77401C7BF79000DA0084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D84F773E1C7BF79000DA0084 /* LaunchScreen.storyboard */; };
 		D84F774B1C7BF79100DA0084 /* VideoRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D84F774A1C7BF79100DA0084 /* VideoRecordTests.m */; };
 		D84F77561C7BF79100DA0084 /* VideoRecordUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D84F77551C7BF79100DA0084 /* VideoRecordUITests.m */; };
+		D84F77681C7C439C00DA0084 /* ASPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = D84F77651C7C439C00DA0084 /* ASPopUpView.m */; };
+		D84F77691C7C439C00DA0084 /* ASProgressPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = D84F77671C7C439C00DA0084 /* ASProgressPopUpView.m */; };
+		D84F77701C7C465A00DA0084 /* RAFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D84F776F1C7C465A00DA0084 /* RAFileManager.m */; };
+		D84F77731C7C473B00DA0084 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = D84F77721C7C473B00DA0084 /* NSString+Hash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		D84F77511C7BF79100DA0084 /* VideoRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84F77551C7BF79100DA0084 /* VideoRecordUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoRecordUITests.m; sourceTree = "<group>"; };
 		D84F77571C7BF79100DA0084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84F77641C7C439C00DA0084 /* ASPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASPopUpView.h; sourceTree = "<group>"; };
+		D84F77651C7C439C00DA0084 /* ASPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASPopUpView.m; sourceTree = "<group>"; };
+		D84F77661C7C439C00DA0084 /* ASProgressPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASProgressPopUpView.h; sourceTree = "<group>"; };
+		D84F77671C7C439C00DA0084 /* ASProgressPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASProgressPopUpView.m; sourceTree = "<group>"; };
+		D84F776E1C7C465A00DA0084 /* RAFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAFileManager.h; sourceTree = "<group>"; };
+		D84F776F1C7C465A00DA0084 /* RAFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAFileManager.m; sourceTree = "<group>"; };
+		D84F77711C7C473B00DA0084 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		D84F77721C7C473B00DA0084 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,11 @@
 		D84F772F1C7BF79000DA0084 /* VideoRecord */ = {
 			isa = PBXGroup;
 			children = (
+				D84F77711C7C473B00DA0084 /* NSString+Hash.h */,
+				D84F77721C7C473B00DA0084 /* NSString+Hash.m */,
+				D84F776E1C7C465A00DA0084 /* RAFileManager.h */,
+				D84F776F1C7C465A00DA0084 /* RAFileManager.m */,
+				D84F77631C7C439C00DA0084 /* ASProgressPopUpView */,
 				D84F77331C7BF79000DA0084 /* AppDelegate.h */,
 				D84F77341C7BF79000DA0084 /* AppDelegate.m */,
 				D84F77361C7BF79000DA0084 /* ViewController.h */,
@@ -138,6 +155,17 @@
 				D84F77571C7BF79100DA0084 /* Info.plist */,
 			);
 			path = VideoRecordUITests;
+			sourceTree = "<group>";
+		};
+		D84F77631C7C439C00DA0084 /* ASProgressPopUpView */ = {
+			isa = PBXGroup;
+			children = (
+				D84F77641C7C439C00DA0084 /* ASPopUpView.h */,
+				D84F77651C7C439C00DA0084 /* ASPopUpView.m */,
+				D84F77661C7C439C00DA0084 /* ASProgressPopUpView.h */,
+				D84F77671C7C439C00DA0084 /* ASProgressPopUpView.m */,
+			);
+			path = ASProgressPopUpView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +299,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D84F77381C7BF79000DA0084 /* ViewController.m in Sources */,
+				D84F77731C7C473B00DA0084 /* NSString+Hash.m in Sources */,
+				D84F77701C7C465A00DA0084 /* RAFileManager.m in Sources */,
 				D84F77351C7BF79000DA0084 /* AppDelegate.m in Sources */,
+				D84F77691C7C439C00DA0084 /* ASProgressPopUpView.m in Sources */,
 				D84F77321C7BF79000DA0084 /* main.m in Sources */,
+				D84F77681C7C439C00DA0084 /* ASPopUpView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +528,7 @@
 				D84F775C1C7BF79100DA0084 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D84F775D1C7BF79100DA0084 /* Build configuration list for PBXNativeTarget "VideoRecordTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +537,7 @@
 				D84F775F1C7BF79100DA0084 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D84F77601C7BF79100DA0084 /* Build configuration list for PBXNativeTarget "VideoRecordUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +546,7 @@
 				D84F77621C7BF79100DA0084 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
